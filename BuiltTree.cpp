@@ -129,8 +129,9 @@ vector<int> reverseLevelOrder(node *root)
 
 int main()
 {
-
-    node *root=NULL;
+    //declaring object of class node
+    node *root;  
+    //
     root=BuiltTree(root);
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
     levelorder(root);
