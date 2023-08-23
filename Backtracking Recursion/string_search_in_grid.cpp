@@ -6,7 +6,7 @@ class Solution {
 public:
 
   
-  bool solve(int row,int col, int ind, string word,vector<vector<char>>grid,int &prev){
+  bool solve(int row,int col, int ind,string word,vector<vector<char>>grid,int &prev){
     if(ind==word.length()) return true;
     int n=grid.size();
     int m=grid[0].size();
