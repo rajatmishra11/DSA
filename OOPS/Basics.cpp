@@ -4,7 +4,7 @@
         2.map real entities
         3.code readibliliy
         4.code reusability
-
+f
     object- > entity ->instance of clss (HERO)
                        1. state/ prop.
                             name, health, level
