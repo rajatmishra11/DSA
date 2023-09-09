@@ -1,4 +1,11 @@
 /*  
+
+
+    Difference b/w Structure and Class in C++
+        Only Difference is-
+            -members of structre are public by default.
+            -members of class are private by default.
+            
     Why OOPS->
         1.solve real world problems,
         2.map real entities
