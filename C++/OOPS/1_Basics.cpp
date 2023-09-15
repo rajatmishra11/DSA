@@ -21,6 +21,8 @@ BASICS OF OOPS-
     class->
         1.  user definded data type
         2.  custom data-tpe
+        3.  used to describe properties and behaviour of an 
+            object.
     -------------------------------------------------------
     What is Constructor-
         1.  Member Function of class
