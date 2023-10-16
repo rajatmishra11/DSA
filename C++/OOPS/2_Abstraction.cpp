@@ -10,7 +10,7 @@ using namespace std;
         ______________________________________________
         Types-
             1. Data Abstraction-
-                This type only shows the required
+                This type only shows the required. 
                 information about the data and hides the unnecessary data.
             2.  Control Abstraction-
                  This type only shows the required information about the 
