@@ -1,31 +1,28 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
- 
 
-
- /*
+/*
 ______________________________________________________________________________________________
-    Polymorphism-
-        1.polymorphism as the ability of a message to be displayed in more than one form.
-        2. means having many forms.
-    Types-
-        1. Compile Time Polymorphism
-        2. Run Time Polymorphism
+   Polymorphism-
+       1.polymorphism as the ability of a message to be displayed in more than one form.
+       2. means having many forms.
+   Types-
+       1. Compile Time Polymorphism
+       2. Run Time Polymorphism
 ______________________________________________________________________________________________
-    1.Compile Time Polymorphism (Static)
-        a) Function Overloading-
-                    Functions can be overloaded by changing the number of arguments or/and
-                    changing the type of arguments. 
-        --------------------------------------------------------------------------------------
-        b) Operator Overloading- (change the working of operator)
-                    C++ has the ability to provide the operators with a special meaning for a data type,
-                    this ability is known as operator overloading. For example, 
-                    we can make use of the addition operator (+) for string class to concatenate two strings. 
-                    We know that the task of this operator is to add two operands. So a single operator ‘+’,
-                    when placed between integer operands, adds them and when placed between string operands, concatenates them. 
+   1.Compile Time Polymorphism (Static)
+       a) Function Overloading-
+                   Functions can be overloaded by changing the number of arguments or/and
+                   changing the type of arguments.
+       --------------------------------------------------------------------------------------
+       b) Operator Overloading- (change the working of operator)
+                   C++ has the ability to provide the operators with a special meaning for a data type,
+                   this ability is known as operator overloading. For example,
+                   we can make use of the addition operator (+) for string class to concatenate two strings.
+                   We know that the task of this operator is to add two operands. So a single operator ‘+’,
+                   when placed between integer operands, adds them and when placed between string operands, concatenates them.
 _______________________________________________________________________________________________
- */
-
+*/
 
 /* ex-Function Overloading-
 class A
@@ -55,7 +52,6 @@ int main()
         return 0;
     }
 */
-
 
 /* ex-Operator Overloading
 class B
@@ -102,7 +98,7 @@ ________________________________________________________________________________
         Types->
             a) Function Overriding:
                 occurs when a derived class has a definition for one
-                of the member functions of the base class. 
+                of the member functions of the base class.
                 That base function is said to be overridden.
                 --------------------------------------------------
             b)  Virtual Funtion:
@@ -136,15 +132,12 @@ class Dog: public Animal
 
 
 int main()
-    {   
+    {
         Dog obj;
         obj.speak();
         return 0;
     }
 */
-
-
-
 
 /*
 
@@ -171,7 +164,7 @@ class B: public A
 int main(){
 //1.
     // B obj;
-    // obj.show();  
+    // obj.show();
     // o/p- "Child class B"
 //2.--------------------------
     // A *bptr; //pointer of base class
@@ -201,25 +194,26 @@ ________________________________________________________________________________
         1.  A class containing  at least one pure virtual function is an abstract class.
         2.  We can not instantiate abstract class
         3.  we must override that function in the derived class, otherwise,
-            the derived class will also become an abstract class. 
-        4.  A pure virtual function is declared by 
+            the derived class will also become an abstract class.
+        4.  A pure virtual function is declared by
             assigning 0 in the declaration.
-        5. An abstract class can have constructors. 
-__________________________________________________________________________________________
+        5. An abstract class can have constructors.
+___________________________________________________________________________________________
 */
-class Person{
-    public:
-        virtual void fun()=0; //pure virtual fn
-        void f1(){}
+class Person
+{
+public:
+    virtual void fun() = 0; // pure virtual fn
+    void f1() {}
 };
 
-class Student: public Person
+class Student : public Person
 {
-    public:
-        void fun()
-        {
-            cout<<"fun() is called\n";
-        }
+public:
+    void fun()
+    {
+        cout << "fun() is called\n";
+    }
 };
 
 int main()

@@ -1,6 +1,6 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
- 
+
 /*
     Friend Function-
         1.  is not an member of class to which it is friend.
@@ -13,37 +13,36 @@ using namespace std;
     ------------------------------------------------------------
 */
 
-
 class Complex
 {
-    private:
-        int a,b;
-    public:
-        void set(int x, int y)
-        {
-            a=x, b=y;
-        }
+private:
+    int a, b;
 
-        void get(){
-            cout<<a<<", "<<b<<endl;
-        }
+public:
+    void set(int x, int y)
+    {
+        a = x, b = y;
+    }
 
-        friend void fun(Complex);
+    void get()
+    {
+        cout << a << ", " << b << endl;
+    }
+
+    friend void fun(Complex);
 };
 
-
-//Note- we dont use membership label(::)
+// Note- we dont use membership label(::)
 void fun(Complex c)
 {
-    cout<<"Sum is "<<c.a+c.b<<endl;
+    cout << "Sum is " << c.a + c.b << endl;
 }
-
 
 int main()
 {
     Complex c1;
-    c1.set(6,7);  //c1 is caller object
-    //c1.fun();  //wrong   //friend function is called without caller object.
+    c1.set(6, 7); // c1 is caller object
+    // c1.fun();  //wrong   //friend function is called without caller object.
     fun(c1);
     return 0;
 }
